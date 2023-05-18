@@ -81,6 +81,9 @@
 
 
 
+
+
+
 // Task_3
 // В первый день спортсмен пробежал x километров, а затем он каждый день увеличивал
 // пробег на 10% от предыдущего значения. По данному числу y определите номер дня,
@@ -120,6 +123,8 @@
 
 
 
+
+
 // Task_4
 // Вводится натуральное число n. Вычислите n! ("эн-факториал") – произведение всех натуральных чисел от 1 до n
 // n! = 1∙2∙3∙…∙ n.
@@ -142,5 +147,74 @@
 //             result *= i;
 //         }
 //         System.out.printf("Факториал числа %d = %d", number, result);
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+// import java.util.Scanner;
+
+// public class seminar_1 {
+//     public static void main(String[] args) {
+
+
+
+// Scanner scanner = new Scanner(System.in);
+//         System.out.print("Введите имя: ");
+//         String tmp = scanner.nextLine();
+//         System.out.println("Добрый день " + tmp + "!");
+//         scanner.close();
+
+
+
+
+
+// int[] arr = new int[] {0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0};
+
+//         int count = 0;
+//         int a = 0;
+//         for (int i = 0; i < arr.length; i++) {
+//             if (arr[i] == 1){
+//                 count++;
+//             }
+//             else if (count > a) {
+//                 a = count;
+//                 count = 0;
+//             }
+//             else count = 0;
+//         }
+//         System.out.println(a);
+
+
+
+
+
+// Добро пожаловать на курс Java -----> Java курс на пожаловать Добро
+// String s = "Добро пожаловать на курс Java";
+// String[] array = s.split(" ");
+
+// for (int i = array.length - 1; i >= 0; i--) {
+//     System.out.print(array[i] + " ");
+// }
+
+
+
+
+// System.out.println(fDiv(2, -0.3f));
+//     }
+//     private static float fDiv(int a, float b){
+//         float f = (float)Math.pow(a, b);
+//         return f;
+//     }
+
 //     }
 // }
