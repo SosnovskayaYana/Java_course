@@ -1,5 +1,6 @@
 /* Вывести все простые числа от 1 до 1000 */
 
+package DZ_java.dz_1_java;
 public class task_2 {
 
     public static void main(String[] args) {
