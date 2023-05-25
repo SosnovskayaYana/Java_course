@@ -47,8 +47,7 @@
 //         // String jewels = "aB";
 //         String stones = "aaaAbbbB";
 //         int a = stones.length()-stones.replace("a","").length();
-//         int b = stones.length()- // длина первоначальной строки отнимаем
-//                 stones.
+//         int b = stones.length()- stones.           // длина первоначальной строки отнимаем
 //                         replace("B","").
 //                         length();
 //         System.out.println("a"+ a + "B" + b);
