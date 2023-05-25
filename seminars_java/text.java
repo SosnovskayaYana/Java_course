@@ -1,4 +1,4 @@
-
+// import java.util.*;
 public class text {
     public static void main(String[] args) {
 
@@ -67,6 +67,82 @@ public class text {
 
 
 
+            /* 
+        Object object = new Object();
 
+        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> list2 = new ArrayList<>();
+
+        list.add(0, 5);
+        list.add(0, 4);
+        list.add(0, 3);
+        list.get(2);
+        list.remove(1);
+        list.set(0, 12);
+        if (list.size() == 0);
+        if (list.isEmpty());
+        list.contains(3);
+        list.indexOf(3);
+        list.lastIndexOf(3);
+//        list2.addAll(list);
+        list.clear();
+//        System.out.println( list.get(0) );
+
+
+
+        for (int i = 0; i < 5; i++) {
+            list.add(new Random().nextInt(10));
+            list2.add(new Random().nextInt(10));
+        }
+
+
+
+//        for (int i: list) {
+//            System.out.println(i);
+//        }
+
+
+
+//        Iterator<Integer> iterator = list.iterator();
+//        while (iterator.hasNext()){
+//            int i = iterator.next();
+//            System.out.println(i);
+//            iterator.remove();
+//        }
+
+
+//        ListIterator<Integer> iterator = list.listIterator(list.size()-1);
+//        while (iterator.hasPrevious()){
+//            int i = iterator.previous();
+//            System.out.println(i);
+//            iterator.remove();
+//        }
+
+
+//        list.forEach(n -> System.out.println(n));
+
+
+
+        System.out.println(list);
+        System.out.println(list2);
+        System.out.println("-".repeat(16));
+//        list.removeAll(list2);
+        list.retainAll(list2);
+        System.out.println(list);
+//        list2.sort(Comparator.reverseOrder());
+
+
+
+        list2.sort(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                if (o1%3!=0 && o2>6) return 0;
+                if (o2%3!=0 && o1==1) return 1;
+                return -1;
+            }
+        });
         
+        System.out.println(list2);
+        */
+
     }}
