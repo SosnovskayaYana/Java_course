@@ -1,6 +1,6 @@
-// Создать множество, ключь и значение строки. Добавить шесть элементов. Вывести в консоль значения. 
+// Создать множество, ключ и значение - строки. Добавить шесть элементов. Вывести в консоль значения. 
 // Добавить ко всем значениям символ "!".
-// Создать второе множество с таким же обобщением. Ключи второго множества частично совпадают с ключеми первого. 
+// Создать второе множество с таким же обобщением. Ключи второго множества частично совпадают с ключами первого. 
 // Объеденить значания во втором множестве и первом если ключи совподают. 
 // Вывести результат в консоль. Реализовать с использованием и без использования метода merge.
 
@@ -14,26 +14,28 @@ import java.util.HashMap;
 public class task_1 {
     public static void main(String[] args) {
 
-        HashMap <String, String> week = new HashMap<>();
+        HashMap <String, String> week1 = new HashMap<>();
 
-        week.put("one", "monday");
-        week.put("two", "tuesday");
-        week.put("three", "wednesday");
-        week.put("four", "thursday");
-        week.put("five", "friday");
-        week.put("six", "saturday");
+        week1.put("one", "monday");
+        week1.put("two", "tuesday");
+        week1.put("three", "wednesday");
+        week1.put("four", "thursday");
+        week1.put("five", "friday");
+        week1.put("six", "saturday");
 
-        week.forEach( (k, v) -> System.out.println(k + " " + v) );
+        // week1.forEach( (k, v) -> System.out.println(k + " " + v) );
 
 
-        week.computeIfPresent("one", (k, v) -> v += "!");
-        week.computeIfPresent("two", (k, v) -> v += "!");
-        week.computeIfPresent("three", (k, v) -> v += "!");
-        week.computeIfPresent("four", (k, v) -> v += "!");
-        week.computeIfPresent("five", (k, v) -> v += "!");
-        week.computeIfPresent("six", (k, v) -> v += "!");
+        week1.computeIfPresent("one", (k, v) -> v += "!");
+        week1.computeIfPresent("two", (k, v) -> v += "!");
+        week1.computeIfPresent("three", (k, v) -> v += "!");
+        week1.computeIfPresent("four", (k, v) -> v += "!");
+        week1.computeIfPresent("five", (k, v) -> v += "!");
+        week1.computeIfPresent("six", (k, v) -> v += "!");
 
-        System.out.println(week);
+        System.out.println("Первое множество: ");
+        week1.forEach( (k, v) -> System.out.println(k + " " + v) );
+        System.out.print("\n");
 
 
         HashMap <String, String> week2 = new HashMap<>();
@@ -44,6 +46,19 @@ public class task_1 {
         week2.put("seven", "sunday");
         week2.put("eight", "mondey");
         
-        System.out.println(week2);
+        System.out.println("Второе множество: ");
+        week2.forEach( (k, v) -> System.out.println(k + " " + v) );
+        System.out.print("\n");
+
+
+        HashMap <String, String> week = new HashMap<>(week1);
+        week.putAll(week2);
+
+        System.out.println("Объединенное множество: ");
+        week.forEach( (k, v) -> System.out.println(k + " " + v) );
+        System.out.print("\n");
+
+
     }
 }
+

@@ -55,33 +55,33 @@ public class seminar_5 {
 
         ArrayList<String> list = new ArrayList<>(List.of("One", "Two", "One", "Three", "Two", "Two","Five", "Three"));
 
-//        for (String s: list) {
-//            if (!hashMap.containsKey(s)) hashMap.put(s, 1);
-//            else hashMap.put(s, hashMap.get(s) + 1);
-//            hashMap.merge(s, 1, (vO, vN) -> vO + vN);
-//        }
+       for (String s: list) {
+           if (!hashMap.containsKey(s)) hashMap.put(s, 1);
+           else hashMap.put(s, hashMap.get(s) + 1);
+           hashMap.merge(s, 1, (vO, vN) -> vO + vN);
+       }
 
-        list.forEach(s -> hashMap.merge(s, 1, (vO, vN) -> vO + vN));
+        // list.forEach(s -> hashMap.merge(s, 1, (vO, vN) -> vO + vN));
 
         System.out.println(hashMap);
 
-        TreeMap<Integer, String> treeMap = new TreeMap<>(Comparator.reverseOrder());
+        // TreeMap<Integer, String> treeMap = new TreeMap<>(Comparator.reverseOrder());
 
-        treeMap.put(16, "Many");
-        treeMap.put(1, "One");
-        treeMap.put(5, "Five");
-        treeMap.put(0, "Many");
-        treeMap.put(7, "One");
-        treeMap.put(15, "Five");
+        // treeMap.put(16, "Many");
+        // treeMap.put(1, "One");
+        // treeMap.put(5, "Five");
+        // treeMap.put(0, "Many");
+        // treeMap.put(7, "One");
+        // treeMap.put(15, "Five");
 
-        treeMap.headMap(12, true);
-        treeMap.tailMap(12, true);
-        treeMap.subMap(2, 12);
-
-
+        // treeMap.headMap(12, true);
+        // treeMap.tailMap(12, true);
+        // treeMap.subMap(2, 12);
 
 
-        System.out.println(treeMap.keySet());
+
+
+        // System.out.println(treeMap.keySet());
 
 
     }
